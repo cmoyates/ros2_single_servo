@@ -1,0 +1,16 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 30
+    use_sim_time: true
+
+    servo_controller:
+      type: "ros2_single_servo/SingleServoController"
+
+    joint_state_boardcaster:
+      type: "joint_state_broadcaster/JointStateBroadcaster"
+
+servo_controller:
+  ros__parameters:
+    publish_rate: 30.0
+
+    base_frame_id: "base_link"
